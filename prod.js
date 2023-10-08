@@ -5,8 +5,12 @@ fetch('https://dummyjson.com/products')
     let productsDiv = document.getElementById('products');
 
     data.products.forEach((product) => {
-        let productDiv = document.createElement('div')
-        productDiv.className = 'product'
+        let productDiv = document.createElement('a')
+        productDiv.href="Products/prod.html?product=" + product.id
+        productDiv.className = 'box'
+
+        let categoryH4 = document.createElement('h4')
+        categoryH4.className = 'category'
 
         let descriptionDiv = document.createElement('div')
         descriptionDiv.className = 'description'
@@ -22,6 +26,7 @@ fetch('https://dummyjson.com/products')
         priceDiv.innerText = product.price;
 
         productDiv.appendChild(image)
+        productDiv.append(categoryH4)
         productDiv.append(descriptionDiv)
         productDiv.append(priceDiv)
 
