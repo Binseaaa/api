@@ -58,6 +58,7 @@
 .description {
     height: 17vh;
     text-align: justify;
+    font-size: 15px;
     padding:10px;
     background-color: rgb(13, 118, 83);
     color: white;
@@ -67,16 +68,47 @@
     text-transform: uppercase;
 }
 
-.border {
-    border: 5px solid;
-    width: 30%;
-    height: 50%;
-    justify-content: center;
-    margin: auto;
-    transform: translateY(20px);
+#title {
+    font-size: 3rem;
 }
 
-#title, #stock, #brand {
-    text-align: left;
-    color: red;
+#stock {
+
+}
+
+#image {
+    height: auto;
+    margin-bottom: .3rem;
+    display: flex;
+    justify-content: center;
+    max-width: 85%;
+}
+
+#images {
+    display: flex;
+    width: 62%;
+    overflow: auto;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 15vh;
+}
+
+.im {
+    max-width: 100%;
+    height: auto; 
+    margin-left: 5rem;
+    margin-right: -8rem;
+}
+
+.border {
+    display: flex;
+    width: auto;
+    margin-top: 20px;
+}
+
+table.content {
+    margin-bottom: 20rem;
+    margin-left: 5rem;
 }
